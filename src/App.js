@@ -57,7 +57,7 @@ function App() {
           <Route path="/adduser">
    <AddUser/>
           </Route>
-          <PrivateRoute path="/purchase">
+          <PrivateRoute path="/purchase/:id">
       <Purchase/>
           </PrivateRoute>
           <Route path="*">

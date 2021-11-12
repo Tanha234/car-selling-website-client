@@ -9,7 +9,7 @@ const Explore = () => {
     const[products,setProducts]=useState([]);
     useEffect(()=>{
         Aos.init({duration:1000})
-        fetch('http://localhost:7000/cars')
+        fetch('https://agile-tor-83300.herokuapp.com/cars')
         .then(res=>res.json())
         .then(data=>setProducts(data))
 
@@ -34,7 +34,7 @@ const Explore = () => {
           </Card.Text>
           <Card.Title data-aos="fade-up"> ${product.price}</Card.Title>
         </Card.Body>
-        <Link to="/purchase">
+        <Link to={`/purchase/${product._id}`}>
         <Button className="product-btn px-5 mb-3" ><i class="fas fa-shopping-cart"></i>  Purchase</Button>
         </Link>
       </Card>

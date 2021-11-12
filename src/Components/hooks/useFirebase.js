@@ -90,7 +90,8 @@ const [user, setUser] = useState({});
         registerUser,
         logout,
         loginUser,
-        authError
+        authError,
+        signInWithGoogle
     }
 
 }

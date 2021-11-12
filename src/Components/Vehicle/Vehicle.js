@@ -7,7 +7,7 @@ const Vehicle = () => {
     const[vehicle,setVehicle]=useState([])
     useEffect(()=>{
         Aos.init({duration:1000})
-        fetch('http://localhost:7000/cars')
+        fetch('https://agile-tor-83300.herokuapp.com/cars')
         .then(res=>res.json())
         .then(data=>setVehicle(data.slice(0,4)))
 

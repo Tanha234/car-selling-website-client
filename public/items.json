@@ -1,0 +1,118 @@
+[
+    {
+        "name":"Ferrai",
+        "description":"Ferrari has traded the naturally breathing V-8 for one that is aided by a turbocharger. The change comes for two reasons: it produces less carbon dioxide, and it allows for even more power out of the V-8 without having to make it physically bigger. Is the new 661-horsepower motor as special as the outgoing",
+        "price":" 3.50 Crore",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8WTod5-gHuKfILtWLWAsi5_WdGM3aNPyUEn4lhVbJgFU3zj4E61e6enfWplHUoqArJ6I&usqp=CAU",
+        "service":"Vehicle Repairing",
+        "service_img":"https://thumbs.dreamstime.com/b/car-engine-vector-icon-filled-flat-sign-mobile-concept-web-design-internal-combustion-glyph-symbol-logo-illustration-pixel-143025963.jpg",
+        "about":"Paints are made up of pigment that has been ground into an oil base, called the vehicle or binder. The most commonly used vehicle is cold-pressed linseed oil, however, it can be made with walnut oil, poppy seed oil, safflower oil or other less popular oils"
+    },
+    {
+        "name":"BMW",
+        "description":"BMW is a world-class luxury car, motorcycle and engine manufacturing brand headquartered in Munich, Germany. Considered one of the world's most admired and recognised brands, it is renowned for its exceptional craftsmanship, reliability and high-quality product offering",
+        "price":" 39.43 Lakh ",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeSQxjjAuXjyZQmMhu7qq0kRXufEgqJ0x5nCjnLSk1aLoE3jRbigMVkK_t1kW_olyQi58&usqp=CAU",
+        "service":"Wheel",
+        "service_img":"https://www.mswwheels.com/images/msw48-VAN_gbfp_700x700.jpg"
+    },
+    {
+        "name":"Aston Martin",
+        "description":"Aston Martin is a British car manufacturer that is associated with both luxury and speed. They are also known for their beautiful design and many people consider the cars produced by this company as true works of art",
+        "price":"55 Lakh",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUGWgsVIemeurIdl2aRwYWybOltNwIVpcwdg&usqp=CAU",
+        "service":"Audio System",
+        "service_img":"https://us.123rf.com/450wm/rastudio/rastudio1708/rastudio170805872/84323732-car-with-music-note-vector-sketch-icon-isolated-on-background-hand-drawn-car-with-music-note-icon-ca.jpg?ver=6"
+    },
+    {
+        "name":"Audi",
+        "description":"AUDI AG is a German company that produces cars under the Audi brand. It is part of the Volkswagen Group. The name Audi is based on a Latin  of the surname of the founder August Horch, itself the German word for  Audi is headquartered in Ingolstadt, Germany.",
+        "price":"70 Lakh",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXy2pJQJD3gBrQU0vGwZBN8HN6jeFU9nQjVk30jVLo0ADj8ZP2zeF0MtqyCLQQkvpX3NM&usqp=CAU",
+        "service":"Auto painting",
+        "service_img":"https://st3.depositphotos.com/1476179/12955/v/950/depositphotos_129558616-stock-illustration-paint-spray-gun-auto-design.jpg"
+    },
+    {
+        "name":"Honda",
+        "description":"According to Honda, they build their cars with an aim of 120% of quality. For them, it is unacceptable that even one customer in thousands or even ten thousand receive a faulty or defective product. ... Honda cars have been known to have great build quality and reliable driving experience",
+        "price":"3 Crore",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh1pBcI9j0l1kBJnHh2dSr0vHnuu-pJKBacQ&usqp=CAU",
+        "service":"",
+        "service_img":""
+    },
+    {
+        "name":" Cadillac",
+        "description":"Cadillac is General Motors' flagship luxury automaker. Cadillac has a range of luxury SUVs, from small crossovers like the XT4 to the XT5, XT6, and the full-size Escalade. Other vehicles include coupes and sedans, as well as performance-oriented V-Series models like the ATS-V and CTS-V",
+        "price":"80 lakh",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj3MLXaeJLa0mxRbixzIOjb5Ti_8SowofprxpldEGNxycBRzE3fgLgIuelTJ45skYRUzY&usqp=CAU"
+        
+    },
+    {
+        "name":" Ford",
+        "description":"Ford India is shutting down operations as it faced losses of around $2 billion, making it not as profitable as they hoped Ford hoped it would be. After Ford India announced that it will no longer be manufacturing cars in India, employees of Ford in India faced unemployment on a massive scale.",
+        "price":"60 lakh",
+        "img":"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2019-ford-fusion-energi-titanium-101-1557786021.jpg?crop=1xw:0.9204545454545454xh;center,top&resize=480:*"
+        
+    },
+    {
+        "name":" Chevrolet",
+        "description":"Chevrolet was the 5th largest car maker in India after Maruti-Suzuki, Hyundai, Tata and Mahindra. ... General Motors stopped selling cars in India by the end of 2017. However, it continues to provide support for existing customers.",
+        "price":"30 lakh",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgcrOYbTzssWm6hnkMbBZOyRNIDHPriEpPg57wpNGIy-yaOexaDDU56oTZPvyp_ElU6H8&usqp=CAU"
+        
+    },
+    
+    {
+        "name":"Buick ",
+        "description":"Buick models are luxury vehicles. This brand is a go-to for drivers looking for a more affordable, high-end car or SUV with plenty of premium amenities. Though coming at a lower cost than most luxury models, this doesn't mean a lack of luxury features.",
+        "price":"2 Crore",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwlAUM71hIRvJFzDkx1dcth0exYZ30zyJhyQ&usqp=CAU"
+        
+    },
+    {
+        "name":"Acura ",
+        "description":"The Honda Motor Company, Ltd. is the entity who owns Acura. ... This resulted in Honda creating its own luxury brand, Acura, the very first Japanese luxury car company, in 1986",
+        "price":"56 Lakh",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf5eIU8czFppDPAqgLymJLeQTLvt-8km6AAg&usqp=CAU"
+        
+    },
+    
+    {
+        "name":" Nissan",
+        "description":" Nissan are, overall, a very reliable brand. Their most popular models appear to be some of the most reliable on the market and they have consistently appeared in the top half of the table for reliability rankings.",
+        "price":"8 Crore ",
+        "img":"https://stimg.cardekho.com/images/carexteriorimages/630x420/Nissan/Magnite/8127/1608191740345/front-left-side-47.jpg?impolicy=resize&imwidth=480"
+        
+    },
+    {
+        "name":"AMC Germlin ",
+        "description":"The Ford Pinto was infamous for the gas tank exploding in rear end collisions. The first reason why the AMC Gremlin didn't suck is context. The Gremlin competed with the Chevy Vega and Ford Pinto",
+        "price":"67 Lakh",
+        "img":"https://static.cargurus.com/images/site/2011/11/07/18/58/1972_amc_gremlin-pic-4072299663009120794-640x480.jpeg"
+        
+    },
+    {
+        "name":"Datsun ",
+        "description":"The Datsun Go is definitely one of the most good looking cars from outside and inside in its price range of Rs 3.29-4.89 lakh. The safety features are segment-above and are standard in all the variants. ",
+        "price":"6 Lakh",
+        "img":"https://cdn.autoportal.com/img/new-cars-gallery/datsun/redi-go/colors/86929baaa29e57e5bbaa233262a224fb.jpg"
+        
+    },
+    {
+        "name":"Volkswagan ",
+        "description":"Volkswagen was originated as a brand to build a people's car - The Beetle. Hence, it was named Volkswagen, which means - The people's car - and is pronounced as 'folks-va-gun'. Basically, 'v 'is turned into 'f'. ",
+        "price":"60 Lakh",
+        "img":"https://imgk.timesnownews.com/story/Polo_GTI_lead.jpg?tr=w-400,h-300,fo-auto"
+        
+    },
+    
+    {
+        "name":"Jeep ",
+        "description":"Jeep derives from the military term GP, which stands for General Purpose vehicles. The brand is renowned for its ability to continually produce excellent 4x4s, SUVs, and off-roading vehicles ",
+        "price":"30 Lakh",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVhasTvNJ3tXunEnpj0YFUG9hGzrgdujD2_Q&usqp=CAU"
+        
+    }
+    
+
+]

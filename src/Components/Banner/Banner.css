@@ -1,0 +1,26 @@
+.banner{
+    background-image: url("https://wallpaperaccess.com/full/2859281.jpg");
+    background-repeat:no-repeat ;
+    background-size: cover;
+    height: 600px;
+}
+.bold{
+   
+
+    font-family: cursive;
+    font-weight: 1900;
+    font-size: 18px;
+    color:rgb(223, 207, 188)
+}
+.head{
+    background-image: url("https://p1.pxfuel.com/preview/223/931/800/lights-dark-red-white-car-street.jpg");
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact{
+    background-image: url("https://hips.hearstapps.com/roa.h-cdn.co/assets/15/32/1600x800/landscape-1438610699-hellcat1.jpg?resize=1200:*");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+}

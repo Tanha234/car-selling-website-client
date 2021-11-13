@@ -21,6 +21,8 @@ import Purchase from './Components/Purchase/Purchase';
 import PageNotFound from './Components/PageNotFound/PageNotFound';
 import Register from './Components/Register/Register';
 import AddUser from './Components/AddUser/AddUser';
+import DashBoard from './Components/DashBoard/DashBoard';
+import MyOrders from './Components/MyOrders/MyOrders';
 
 
 function App() {
@@ -29,8 +31,8 @@ function App() {
       <AuthProvider>
        <Router>
          
-         <Headers/>
-      
+          <Headers/> 
+       
         <Switch>
          
           <Route exact path="/">
@@ -57,6 +59,12 @@ function App() {
           <Route path="/adduser">
    <AddUser/>
           </Route>
+          <Route path="/myorders">
+   <MyOrders/>
+          </Route>
+          <PrivateRoute path="/dashboard">
+ <DashBoard/>
+          </PrivateRoute>
           <PrivateRoute path="/purchase/:id">
       <Purchase/>
           </PrivateRoute>

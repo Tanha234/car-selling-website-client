@@ -7,8 +7,9 @@ import useAuth from '../hooks/useAuth';
 const Headers = () => {
   const{user,logout}=useAuth()
     return (
-        <div className="head">
-            <Navbar collapseOnSelect expand="lg"  variant="dark">
+        <div >
+            <Navbar collapseOnSelect expand="lg" bg="secondary" variant="info">
+              
   <Container>
   <Nav >
       <img className="w-25 justify-content-start me-5 pe-5" src={logo} alt=""/>
@@ -16,20 +17,25 @@ const Headers = () => {
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav >
-      <Nav.Link className="me-2 text-white"  as={Link} to="/home" >Home</Nav.Link>
+      <Nav.Link className="me-2 text-dark"  as={Link} to="/home" >Home</Nav.Link>
       
-      <Nav.Link className="me-2 text-white"  as={Link} to="/about" >About</Nav.Link>
-      <Nav.Link className="me-2 text-white"  as={Link} to="/explore" >Explore</Nav.Link>
-      <Nav.Link className="me-2 text-white" as={Link} to="/contact" >Contact </Nav.Link>
-      <Nav.Link className="me-2 text-white"  as={Link} to="/login" >Log in</Nav.Link>
-      <span className="fs-6 ms-2 mt-2 text-white">{user.displayName}</span>
+      <Nav.Link className=" text-dark"  as={Link} to="/about" >About</Nav.Link>
+      <Nav.Link className=" text-dark"  as={Link} to="/explore" >Explore</Nav.Link>
+      <Nav.Link className=" text-dark" as={Link} to="/contact" >Contact </Nav.Link> 
+       <Nav.Link className="text-dark"  as={Link} to="/login" >Login</Nav.Link>
+        
+       <span className="fs-6  mt-2 text-dark">{user.displayName}</span> 
       
    
       
-      {
-                   user?.email &&<Button variant="secondary" className="ms-5" onClick={logout}>Logout  <i className="fas fa-arrow-right"></i></Button>
+   {
+                   user?.email &&
+                   <div className="d-flex">
+                   <Nav.Link className=" text-dark"  as={Link} to="/dashboard" >DashBoard</Nav.Link>
+                   <Button variant="secondary" onClick={logout}>Logout  <i className="fas fa-arrow-right"></i></Button>
+                   </div>
                  }
-    </Nav>
+    </Nav> 
     
   </Navbar.Collapse>
   </Container>

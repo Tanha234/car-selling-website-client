@@ -1,5 +1,5 @@
 .banner{
-    background-image: url("https://wallpaperaccess.com/full/2859281.jpg");
+    background-image: url("https://firstliberty.org/wp-content/uploads/2020/09/road-bg-2.jpg");
     background-repeat:no-repeat ;
     background-size: cover;
     height: 600px;
@@ -8,9 +8,9 @@
    
 
     font-family: cursive;
-    font-weight: 1900;
+    font-weight: 4900;
     font-size: 18px;
-    color:rgb(223, 207, 188)
+    color:floralwhite
 }
 .head{
     background-image: url("https://p1.pxfuel.com/preview/223/931/800/lights-dark-red-white-car-street.jpg");
@@ -23,4 +23,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 700px;
+}
+.dashboard{
+    height: 500px;
 }

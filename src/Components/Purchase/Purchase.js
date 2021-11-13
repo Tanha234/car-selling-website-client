@@ -1,28 +1,61 @@
 import React, { useEffect, useState } from 'react';
-import { Card, Col, Row } from 'react-bootstrap';
+import { Button, Card, Col, Container, Form, Row } from 'react-bootstrap';
 import { useParams } from 'react-router';
 import { useForm } from "react-hook-form";
 import useAuth from '../hooks/useAuth';
+import axios from 'axios';
 
 const Purchase = () => {
     const[item,setItem]=useState({})
     const { register, handleSubmit } = useForm();
+    
     const{user}=useAuth()
     const{id}=useParams()
+    const[singleItem,setSingleItem]=useState([])
+    
+   
     useEffect(()=>{
         fetch(`https://agile-tor-83300.herokuapp.com/cars/${id}`)
         .then(res=>res.json())
         .then(data=>setItem(data))
-    })
-    const onSubmit = data => {
-        console.log(data);
-        alert("Submitted")
-        
-    } 
-    const onButton=()=>{
-        
+    },[id])
+    delete singleItem._id;
+    const intialInfo={...singleItem}
+    const[order,setOrder]=useState(intialInfo);
+    const onSubmit = data =>{ console.log(data);
+     
+    
 
-        
+    
+  const orderInfo={
+    ...singleItem,
+    ...order,
+   
+    name:user.displayName,
+    email:user.email,
+    phone:'',
+    address:''
+    
+  }
+
+ 
+axios.post('http://localhost:7000/orders',data)
+.then(res=>{
+    console.log(res)
+
+}) 
+
+}
+
+   
+    const handleChange=e=>{
+      const field=e.target.name;
+      const value=e.target.value;
+      const newInfo={...order};
+      newInfo[field]=value;
+      console.log(newInfo)
+      setOrder(newInfo)
+
     }
     return (
         <div>
@@ -59,20 +92,20 @@ const Purchase = () => {
          <div className="col-md-6">
          <form onSubmit={handleSubmit(onSubmit)}>
                    <label className="fs-5 me-5">Name:</label>
-      <input className="w-75 my-3 py-2" defaultValue={user.displayName} {...register("name")} />
+      <input className="w-75 my-3 py-2" name="name" onBlur={handleChange} defaultValue={user.displayName} {...register("name")} />
       <br/>
       <label className="fs-5 me-5">Email:</label>
-      <input className="w-75 my-3 py-2 " defaultValue={user.email} {...register("email")} />
+      <input className="w-75 my-3 py-2 " name="email" onBlur={handleChange} defaultValue={user.email} {...register("email")} />
       <br/>
       <label className="fs-5 me-4">Address:</label>
-      <input className="w-75 my-3 py-2"{...register("address")} />
+      <input className="w-75 my-3 py-2" onBlur={handleChange} name="address"{...register("address")} />
      <br/>
      
       <label className="fs-5 me-4">Phone:</label>
-      <input className="w-75 my-3 py-2"{...register("phone")} />
+      <input className="w-75 my-3 py-2"  onBlur={handleChange} name="phone"{...register("phone")} />
      <br/>
      
-      <input onChange={onButton}className="regular-button px-5 py-2" type="submit"> 
+      <input className="regular-button px-5 py-2" type="submit"> 
     
           </input>
       
@@ -80,12 +113,14 @@ const Purchase = () => {
 
     </form>
          </div>
-        
+      
             
             
         </div>
         </div>
     );
 };
+
+
 
 export default Purchase;

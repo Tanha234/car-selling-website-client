@@ -7,10 +7,10 @@ import Vehicle from '../Vehicle/Vehicle';
 
 const Home = () => {
     return (
-        <div>
-            <Banner/>
+        <div className="home">
+             <Banner/> 
            {/* <AboutUS/> */}
-            <Products/>
+            <Products/> 
             <Vehicle/>
         </div>
     );

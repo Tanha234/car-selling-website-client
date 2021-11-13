@@ -15,7 +15,7 @@ const Products = () => {
 
     },[])
     return (
-        <div className="bg-dark py-5 ">
+        <div className="bg-dark  ">
             <h1 data-aos="fade-down" className="text-white">Our Products</h1>
           <Row xs={1} md={3} className="g-2 mx-5 px-5">
                 {

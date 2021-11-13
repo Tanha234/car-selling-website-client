@@ -12,27 +12,32 @@ const Banner = () => {
     return (
         <div className="banner d-flex ">
             <div className="col-md-6 pt-5 mt-5 my-5">
-                <div className="pt-5 mt-5">
+               
+            <br/>
+   
                 <h1 className="mt-5 pt-5 fs-1 fw-bolder bold ">Find your dream car with CarFlick</h1>
-              <h5 className="mt-2 pt-4 bold">High Performance & Outstanding Technology Combined
+              
+              <h5 className="mt-2 pt-5 fs-4 bold">High Performance & Outstanding Technology Combined
 </h5>
 </div>
+
               
                 
 
-            </div>
+          
             
-            <div   className="col-md-6 pt-5  ">
-                <div data-aos="fade-left"  className="mx-auto my-5 pt-5">
-                <img  className="mx-auto my-5 pt-5" src={car}alt=""/>
-                </div>
+            <div   className="col-md-6 pt-5 mt-5" data-aos="fade-down" >
+               
+                <img  className="img-fluid  pt-5 mt-5" src={car}alt=""/>
+               
                 
                 
 
-            </div>
-            
+            </div>  
+              
             
         </div>
+      
     );
 };
 

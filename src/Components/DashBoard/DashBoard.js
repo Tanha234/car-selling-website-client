@@ -1,69 +1,44 @@
-import React, { useState } from 'react';
-import { Button, Offcanvas } from 'react-bootstrap';
+import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-   
-    useParams,
-    useRouteMatch
-  } from "react-router-dom";
-import DashboardHome from './DashboardHome/DashboardHome';
-import MakeAdmin from './DashboardHome/MakeAdmin/MakeAdmin';
+import useAuth from '../hooks/useAuth';
+
+
+
+
 
 const DashBoard = () => {
-    const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-  let { path, url } = useRouteMatch();
-    return (
-        <div className="py-5 dashboard">
+  
+  const{user}=useAuth();
+  return (
+    <div>
+  
+    <div className="d-flex">
        
+        <div className="col-md-2">
+        <Container className=" classy">
+<Row md={1}>
+<Link className="colp mt-3" to="/pay">Pay</Link>
+  <Link className="colp mt-3" to="/myorders">My orders</Link>
+  
+ 
+
+  <Link className="colp mt-3" to="/review">Review</Link>
+  
   
 
-  
-      <Button variant="primary" onClick={handleShow}>
-        Launch
-      </Button>
-
-      <Offcanvas show={show} onHide={handleClose}>
-        <Offcanvas.Header closeButton>
-          <Offcanvas.Title>DashBoard</Offcanvas.Title>
-        </Offcanvas.Header>
-        <Offcanvas.Body>
-       
-        <Link to={`${url}`}>DashBoard</Link>
-        <br/>
-        <Link to={`${url}/manage`}>Manage All Orders</Link>
-        <br/>
-        <Link to={`${url}/addproduct`}>Add a product</Link>
-        <br/>
-        <Link to={`${url}/makeadmin`}>Make Admin</Link>
-        <br/>
-        <Link to={`${url}/manageproduct`}>Manage Products</Link>
-       
-       
-         <br/>
-
-         <Switch>
-          <Route  path="/">
-              <DashboardHome/>
-        
-          </Route>
-          <Route path={`${path}/makeadmin`}>
-          <MakeAdmin/>
-          </Route>
-        </Switch>
-   
-  
-         
-        </Offcanvas.Body>
-      </Offcanvas>
-
+</Row>
+</Container>
         </div>
-    );
+        <div className="col-md-10 pt-5 ps-5">
+               <h1 className="text pt-5">Welcome {user.displayName}</h1> 
+            
+        </div>
+     
+        
+    </div>
+    </div>
+);
 };
 
 export default DashBoard;

@@ -10,7 +10,7 @@ const Banner = () => {
 
     },[])
     return (
-        <div className="banner d-flex ">
+        <div className="bg-dark d-flex pb-5 ">
             <div className="col-md-6 pt-5 mt-5 my-5">
                
             <br/>

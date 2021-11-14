@@ -5,8 +5,9 @@ import { useForm } from "react-hook-form";
 const AddUser = () => {
     const { register, handleSubmit } = useForm();
   const onSubmit = data =>{ console.log(data);
-  axios.post('http://localhost:7000/cars',data)
+  axios.post('https://agile-tor-83300.herokuapp.com/cars',data)
     .then(res=>{
+        alert('Added Product')
         console.log(res)
 
     })
@@ -16,18 +17,21 @@ const AddUser = () => {
 
       
 <form onSubmit={handleSubmit(onSubmit)}>
- <label className="fs-5 me-5">Name:</label>
-      <input className="w-50 mt-3 py-2" {...register("name", { required: true, maxLength: 20 })} />
+    <h2>Add a Product</h2>
+
+      <label className="fs-5 me-3"> Product:</label>
+      <input  className="w-50 mt-3 py-2"{...register("product")} />
       <br/>
-      <label className="fs-5 me-5">Email:</label>
-      <input className="w-50 mt-3 py-2" {...register("description")} />
-      <br/>
-      <label className="fs-5 me-5"> Place:</label>
-      <input  className="w-50 mt-3 py-2"{...register("img")} />
+      <label className="fs-5 me-3">Description:</label>
+      <input  className="w-50 mt-3 py-2"{...register("description")} />
       <br/>
       <label className="fs-5 me-5">Cost:</label>
       <input className="w-50 mt-3 py-2"type="number" {...register("price")} />
       <br/>
+      <label className="fs-5 me-5"> img:</label>
+      <input  className="w-50 mt-3 py-2"{...register("img")} />
+      <br/>
+      
       <input className="px-5 py-2 mt-2" type="submit" />
     </form>
            

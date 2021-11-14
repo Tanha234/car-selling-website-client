@@ -23,6 +23,12 @@ import Register from './Components/Register/Register';
 import AddUser from './Components/AddUser/AddUser';
 import DashBoard from './Components/DashBoard/DashBoard';
 import MyOrders from './Components/MyOrders/MyOrders';
+import DashboardHome from './Components/DashBoard/DashboardHome/DashboardHome';
+import Pay from './Components/Pay/Pay';
+import Review from './Components/Review/Review';
+import MakeAdmin from './Components/DashBoard/DashboardHome/MakeAdmin/MakeAdmin';
+import ManageAllOrders from './Components/ManageAllOrders/ManageAllOrders';
+import ManageProducts from './Components/ManageProducts/ManageProducts';
 
 
 function App() {
@@ -42,10 +48,18 @@ function App() {
            <Home/>
           </Route>
           <Route path="/about">
-           <About/>
+        <MakeAdmin/>
           </Route>
           <Route path="/register">
            <Register/>
+          </Route>
+          <Route path="/manage">
+            <ManageAllOrders/>
+           
+          </Route>
+          <Route path="/manageProduct">
+          <ManageProducts/>
+           
           </Route>
           <PrivateRoute path="/explore">
           <Explore/>
@@ -56,15 +70,21 @@ function App() {
           <Route path="/login">
       <Login/>
           </Route>
+          <Route path="/pay">
+    <Pay/>
+          </Route>
           <Route path="/adduser">
    <AddUser/>
           </Route>
           <Route path="/myorders">
    <MyOrders/>
           </Route>
-          <PrivateRoute path="/dashboard">
- <DashBoard/>
-          </PrivateRoute>
+          <Route path="/review">
+   <Review/>
+          </Route>
+          {/* <PrivateRoute path="/dashboard">
+<DashBoard/>
+          </PrivateRoute> */}
           <PrivateRoute path="/purchase/:id">
       <Purchase/>
           </PrivateRoute>

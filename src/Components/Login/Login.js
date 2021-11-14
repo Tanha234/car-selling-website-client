@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import useAuth from '../hooks/useAuth';
 import login from '../../iamges/login-removebg-preview.png'
 import { Form,Button } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+import { NavLink,useHistory,useLocation } from 'react-router-dom';
 import { Container, Spinner, Alert } from 'react-bootstrap';
 
 
 
 const Login = () => {
+    const history=useHistory()
+    const location=useLocation()
 
 const [loginData, setLoginData] = useState([]);
     const { user, loginUser, isLoading, authError,signInWithGoogle } = useAuth();
@@ -21,11 +23,11 @@ const [loginData, setLoginData] = useState([]);
     console.log(loginData);
     const handleLoginSubmit = e => {
         e.preventDefault();
-        loginUser(loginData.email, loginData.password)
+        loginUser(loginData.email, loginData.password,history,location)
     }
 
     return (
-        <Container>
+        <Container className="pass">
             {!isLoading && <Form className="w-25 mx-auto" onSubmit={handleLoginSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
@@ -55,8 +57,10 @@ const [loginData, setLoginData] = useState([]);
                     Logged In Succesfully!
                 </Alert>
             }
+            <p>Or,</p>
+            <br/>
 
-<button onClick={signInWithGoogle}>Login</button>
+<button  className="px-5 mt-3 "onClick={signInWithGoogle}>GoogleLogin</button>
         </Container>
     );
 };

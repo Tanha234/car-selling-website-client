@@ -12,6 +12,7 @@ const Purchase = () => {
     const{user}=useAuth()
     const{id}=useParams()
     const[singleItem,setSingleItem]=useState([])
+
     
    
     useEffect(()=>{
@@ -23,6 +24,7 @@ const Purchase = () => {
     const intialInfo={...singleItem}
     const[order,setOrder]=useState(intialInfo);
     const onSubmit = data =>{ console.log(data);
+      
      
     
 
@@ -39,9 +41,12 @@ const Purchase = () => {
   }
 
  
-axios.post('http://localhost:7000/orders',data)
+axios.post('https://agile-tor-83300.herokuapp.com/orders',data)
 .then(res=>{
     console.log(res)
+   
+      alert("Added successfuly")
+    
 
 }) 
 
@@ -59,7 +64,7 @@ axios.post('http://localhost:7000/orders',data)
     }
     return (
         <div>
-            <h2>Confirm Your Order</h2>
+            <h2>Confirm Your Order{user.displayName}</h2>
         <div className="d-flex py-5">
             
             

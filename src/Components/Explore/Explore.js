@@ -30,7 +30,7 @@ const Explore = () => {
         <Card.Body >
           <Card.Title data-aos="fade-up">{product.name}</Card.Title>
           <Card.Text data-aos="fade-up">
-          {product.description.slice(0,150)}
+          {product.description?.slice(0,150)}
           </Card.Text>
           <Card.Title data-aos="fade-up"> ${product.price}</Card.Title>
         </Card.Body>

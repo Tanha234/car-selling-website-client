@@ -1,17 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import { Table,Button } from 'react-bootstrap';
+import DashBoard from '../DashBoard/DashBoard';
 
 const MyOrders = () => {
+    <DashBoard/>
     const[order,setOrder]=useState([])
+    
     useEffect(()=>{
-        fetch(`http://localhost:7000/orders`)
+        fetch(`https://agile-tor-83300.herokuapp.com/orders`)
         .then(res=>res.json())
         .then(data=>setOrder(data))
     },[])
     const handleDelete=id=>{
         const proceed=window.confirm("Are you sure about delete?")
         if(proceed){
-        const url=`http://localhost:7000/orders/${id}`
+        const url=`https://agile-tor-83300.herokuapp.com/orders/${id}`
         fetch(url,{
         method:'DELETE'
         
@@ -30,7 +33,7 @@ const MyOrders = () => {
     }
     }
     return (
-        <div>
+        <div className="pass">
            <Table>
                         <thead className="bg-light">
                             <tr>

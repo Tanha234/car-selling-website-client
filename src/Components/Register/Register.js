@@ -8,63 +8,7 @@ import useAuth from '../hooks/useAuth';
 
 
 const Register = () => {
-//     const[loginData,setLoginData]=useState({})
 
-// const{registerUser}=useAuth()
-
-//     const handleLoginSubmit=e=>{
-//         if(loginData.password!==loginData.password2){
-//           alert("Your password didn't match")
-//           return
-
-//         }
-//         registerUser(loginData.email,loginData.password)
-//         e.preventDefault();
-//       }
-  
-//       const handleOnChange=e=>{
-//         const field=e.target.name;
-//         const value=e.target.value;
-//        const newLogInData={...loginData}
-       
-//        newLogInData[field]=value
-//        console.log(newLogInData)
-//        setLoginData(newLogInData)
-  
-//       }
-
-
-//     return (
-//         <div className="d-flex mb-5">
-//             <div className="col-md-6">
-//             <img src={login} alt=""/>
-                
-//             </div>
-//             <div className="col-md-6">
-//             <h2 className="pt-2">Please Register</h2>
-//             <form onSubmit={handleLoginSubmit}>
-              
-//             <input className="w-50 my-2 p-2" type="email" name="email" onChange={handleOnChange} placeholder="Your email" id="" />
-               
-               
-//                <br/>
-//                 <input className="w-50 my-2 p-2" type="password" name="password" onChange={handleOnChange} placeholder="Your password" id="" />
-//                 <br/>
-//                 <input className="w-50 my-2 p-2" type="password" name="password2" onChange={handleOnChange} placeholder="Rewrite Your Password" id="" />
-//                 <br/>
-//                 <Button className="px-5">Login</Button>
-//                 </form>
-//                 Already Registered <Link to="/login">Please Login</Link> 
-
-//             </div>
-//              <h2 className="pt-2">Please Register</h2>
-            
-//                 Already Registered?<Link style={{
-//   textDecoration:"none"
-// }} to="/login">Please Login</Link> 
-//         </div>
-//     );
-// };
 const [loginData, setLoginData] = useState([]);
 const { registerUser, isLoading, user, authError } = useAuth();
 const handleOnChange = e => {

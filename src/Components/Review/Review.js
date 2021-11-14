@@ -15,11 +15,9 @@ const Review = () => {
     })
 }
     return (
-        <div className="d-flex">
-            <div className="col-md-6">
-
-</div>
-            <div className="col-md-6">
+       
+            <div className="col-md-12">
+                <h2>Give Review </h2>
             <form onSubmit={handleSubmit(onSubmit)}>
  <label className="fs-5 me-5">Name:</label>
       <input className="w-50 mt-3 py-2" {...register("name", { required: true, maxLength: 20 })} />
@@ -36,7 +34,7 @@ const Review = () => {
     </form>
         </div>
         
-        </div>
+      
     );
 };
 

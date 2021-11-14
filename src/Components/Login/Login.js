@@ -23,7 +23,7 @@ const [loginData, setLoginData] = useState([]);
     console.log(loginData);
     const handleLoginSubmit = e => {
         e.preventDefault();
-        loginUser(loginData.email, loginData.password,history,location)
+        loginUser(loginData.email, loginData.password,location,history)
     }
 
     return (

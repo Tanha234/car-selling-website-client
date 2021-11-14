@@ -102,7 +102,10 @@ axios.post('https://agile-tor-83300.herokuapp.com/orders',data)
       <label className="fs-5 me-5">Email:</label>
       <input className="w-75 my-3 py-2 " name="email" onBlur={handleChange} defaultValue={user.email} {...register("email")} />
       <br/>
-      <label className="fs-5 me-4">Address:</label>
+      {/* <label className="fs-5 me-4">Model:</label>
+      <input className="w-75 my-3 py-2" onBlur={handleChange}  defaultValue={user.email} name="model"{...register("address")} />
+     <br/> */}
+     <label className="fs-5 me-4">Address:</label>
       <input className="w-75 my-3 py-2" onBlur={handleChange} name="address"{...register("address")} />
      <br/>
      

@@ -10,6 +10,7 @@ import Vehicle from '../Vehicle/Vehicle';
 const Home = () => {
     return (
         <div className="home">
+            <h2>ko</h2>
              <Banner/> 
            {/* <AboutUS/> */}
             <Products/> 

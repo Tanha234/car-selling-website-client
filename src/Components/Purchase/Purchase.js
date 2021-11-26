@@ -9,7 +9,7 @@ const Purchase = () => {
     const[item,setItem]=useState({})
     const { register, handleSubmit } = useForm();
     
-    const{user}=useAuth()
+    const{user,updateProfile}=useAuth()
     const{id}=useParams()
     const[singleItem,setSingleItem]=useState([])
 

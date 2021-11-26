@@ -126,6 +126,7 @@ const auth = getAuth();
         registerUser,
         loginUser,
         signInWithGoogle,
+        updateProfile,
         logout,
     }
 }
